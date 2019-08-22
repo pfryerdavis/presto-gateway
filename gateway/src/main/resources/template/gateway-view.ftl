@@ -40,7 +40,7 @@
     : <script>document.write(new Date(${gatewayStartTime?long?c}).toLocaleString());</script></h3></div>
 
 <div>
-    <h3>All active backends:</h3>
+    <h3>All SHOPIFY active backends:</h3>
     <table id="availableClusters" class="display">
         <thead>
         <tr>
