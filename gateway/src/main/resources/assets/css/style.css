@@ -133,13 +133,49 @@ tbody {
      text-transform: uppercase;
      font-size: 16px;
      line-height: 1;
- }
+}
 
- .group-container {
+.group-container {
     border-bottom: 1px #424242 solid;
     padding: 15px 0;
- }
+}
 
- .availableClusters {
-    margin-top: 5px;
- }
+.availableClusters {
+   margin-top: 5px;
+}
+
+.refresh-button-container {
+    margin: 5px 15px;
+}
+
+.button {
+    color: #333333;
+    padding: 5px;
+    border: 1px #ccc solid;
+    background: #fff;
+    line-height: 2;
+}
+
+.button:hover {
+    padding: 5px;
+    border: 1px #ccc solid;
+    background: #e6e6e6;
+    color: #333333;
+    text-decoration: none;
+}
+
+.query-history-table {
+    color:
+}
+
+.pull-left {
+    float: left !important
+}
+
+.pull-right {
+    float: right !important
+}
+
+.dataTables_filter input {
+    width: 500px
+}
