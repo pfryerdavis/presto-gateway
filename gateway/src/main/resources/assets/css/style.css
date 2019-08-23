@@ -1,0 +1,98 @@
+body {
+    background: #252830;
+    color: white;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-align: left;
+    padding: 0px 0px 20px;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+}
+
+h3 {
+    background-color: #3e3e3e;
+}
+
+a {
+    color: #98e8ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #4cd7ff;
+    text-decoration: underline;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    color: #cecece;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+/* CLASSES */
+.container {
+    min-width: 960px;
+    width: auto !important;
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+}
+
+@media (min-width: 768px)
+.navbar {
+    border-radius: 0;
+}
+
+.navbar {
+    padding: 0 5px 0 5px;
+    position: relative;
+    min-height: 80px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #1EDCFF;
+    box-sizing: border-box;
+}
+
+.navbar img {
+    width: 40px;
+    height: auto;
+    padding-top: 17px;
+    vertical-align: middle;
+    border: 0;
+}
+
+.navbar-header {
+    margin-right: 0;
+    margin-left: 0;
+    float: left;
+    padding: 0 15px 15px;
+}
+
+.navbar-brand {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    padding-left: 30px;
+    padding-top: 25px;
+    float: left;
+    padding: 35px 15px 15px;
+    line-height: 20px;
+}
+
