@@ -9,10 +9,9 @@ run `mvn clean install` to build `presto-gateway`
 Edit the [config file](gateway/src/main/resources/config.yml.template) and update backend urls 
 
 ```
-cd gateway/target/
-java -jar gateway-{{VERSION}}-jar-with-dependencies.jar server ../src/presto-gateway/gateway/src/main/resources/config.yml.template
+java -jar gateway/target/gateway-{{VERSION}}-jar-with-dependencies.jar server gateway/src/main/resources/config.yml.template
 ```
-Now you can access load balanced presto at localhost:8080 port. We will refer to this as `prestogateway.lyft.com`
+Now you can access load balanced presto at localhost:8090 port. We will refer to this as `prestogateway.lyft.com`
  
 ### Query History UI - check query plans etc.
 PrestoGateway records history of recent queries and displays links to check query details page in respective presto cluster.  
