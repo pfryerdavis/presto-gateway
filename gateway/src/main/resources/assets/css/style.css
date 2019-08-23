@@ -4,16 +4,13 @@ body {
     font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     text-align: left;
+    line-height: 1.42857143;
     padding: 0px 0px 20px;
 }
 
 img {
     vertical-align: middle;
     border: 0;
-}
-
-h3 {
-    background-color: #3e3e3e;
 }
 
 a {
@@ -96,3 +93,53 @@ tbody {
     line-height: 20px;
 }
 
+@media (min-width: 768px)
+.navbar-right {
+    float: right !important;
+}
+
+.nav > li {
+    position: relative;
+    display: block;
+    float: right;
+}
+
+.navbar-cluster-info {
+    display: block;
+    box-sizing: border-box;
+    padding: 25px 15px 15px;
+    position: relative;
+    color: #666;
+    font-size: 11px;
+}
+
+.navbar-cluster-info .text {
+    color: #fff;
+    font-size: 16px;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.heading-container {
+    margin-bottom: 5px;
+}
+
+.heading {
+     background-color: #3e3e3e;
+     padding: 5px;
+     color: #ccc;
+     text-transform: uppercase;
+     font-size: 16px;
+     line-height: 1;
+ }
+
+ .group-container {
+    border-bottom: 1px #424242 solid;
+    padding: 15px 0;
+ }
+
+ .availableClusters {
+    margin-top: 5px;
+ }

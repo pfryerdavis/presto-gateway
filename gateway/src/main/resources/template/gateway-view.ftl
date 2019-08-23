@@ -56,12 +56,19 @@
                 </table>
             </div>
         </div>
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <span class="navbar-cluster-info">
+                    <span class="uppercase">Started at</span>
+                    <br>
+                    <span class="text uppercase"><script>document.write(new Date(${gatewayStartTime?long?c}).toLocaleString());</script></span>
+                </span>
+            </li>
+        </ul>
     </nav>
-    <div><h3>Gateway Server started at
-        : <script>document.write(new Date(${gatewayStartTime?long?c}).toLocaleString());</script></h3></div>
-
-    <div>
-        <h3>All active backends:</h3>
+    <div class="group-container">
+        <div class="heading-container"><span class="heading">All active backends</span></div>
+        <br>
         <table id="availableClusters" class="display">
             <thead>
             <tr>
