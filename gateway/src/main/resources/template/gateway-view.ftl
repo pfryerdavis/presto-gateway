@@ -148,13 +148,15 @@
     <div class="group-container">
         <div class="heading-container"><span class="heading">Query history distribution</span></div>
         <br>
-        <ul class="chart">
-            <#list queryDistribution?keys as cluster>
-                <li data-data="${queryDistribution[cluster]?string}">
-                ${cluster?string} => ${queryDistribution[cluster]?string}
-                </li>
-            </#list>
-        </ul>
+        <center>
+            <ul class="chart">
+                <#list queryDistribution?keys as cluster>
+                    <li data-data="${queryDistribution[cluster]?string}">
+                    ${cluster?string} => ${queryDistribution[cluster]?string}
+                    </li>
+                </#list>
+            </ul>
+        <center>
     </div>
 
     </#if>
