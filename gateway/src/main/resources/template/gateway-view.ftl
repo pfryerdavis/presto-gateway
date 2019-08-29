@@ -59,9 +59,8 @@
         <table id="availableClusters" class="display">
             <thead>
             <tr>
-                <th>Cluster Name</th>
+                <th class="cluster-name right">Cluster Name</th>
                 <th>URL</th>
-                <th>Local Port</th>
                 <th>Routing Group</th>
             </tr>
             </thead>
@@ -69,53 +68,25 @@
             <#list backendConfigurations as bc>
             <#setting number_format="#####">
             <tr>
-                <td>  ${bc.name}</td>
-                <td><a href="${bc.proxyTo}" target="_blank">${bc.proxyTo}</a></td>
-                <td> ${bc.localPort?string} </td>
+                <td class="right">  ${bc.name}</td>
+                <td><a href="${bc.proxyTo}" target="_blank">${bc.proxyTo}:${bc.localPort?string}</a></td>
                 <td> ${bc.routingGroup}</td>
             </tr>
             </#list>
             </tbody>
         </table>
     </div>
-
-    <div class="group-container">
-        <div class="heading-container"><span class="heading">All active backends</span></div>
-        <br>
-        <table id="availableClusters" class="display">
-            <thead>
-            <tr>
-                <th>Cluster Name</th>
-                <th>URL</th>
-                <th>Local Port</th>
-                <th>Routing Group</th>
-            </tr>
-            </thead>
-            <tbody>
-            <#list backendConfigurations as bc>
-            <#setting number_format="#####">
-            <tr>
-                <td>  ${bc.name}</td>
-                <td><a href="${bc.proxyTo}" target="_blank">${bc.proxyTo}</a></td>
-                <td> ${bc.localPort?string} </td>
-                <td> ${bc.routingGroup}</td>
-            </tr>
-            </#list>
-            </tbody>
-        </table>
-    </div>
-
 
     <div class="refresh-button-container">
         <a class="button white" onclick="location.reload()" href="">Refresh</a>
     </div>
 
-    <#if queryHistory?size != 0>
+    <!-- <#if queryHistory?size != 0> -->
     <div class="group-container">
         <div class="heading-container"><span class="heading">Query details [history size = ${queryHistory?size}]</span></div>
         <br>
         <div>
-            <table id="queryHistory" class="display" style="width:100%">
+            <table id="queryHistory" class="display query-history-table" style="width:100%">
                 <thead>
                 <tr>
                     <th>queryId</th>
@@ -157,7 +128,7 @@
         </ul>
     </div>
 
-    </#if>
+    <!-- </#if> -->
  </div>
 </body>
 </html>
